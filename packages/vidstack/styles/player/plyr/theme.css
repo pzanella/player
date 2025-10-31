@@ -933,6 +933,12 @@ a.plyr__control::before {
   display: block;
 }
 
+[data-started][data-buffering] .plyr.plyr--video .plyr__control--overlaid,
+[data-started][data-waiting] .plyr.plyr--video .plyr__control--overlaid,
+[data-started][data-loading] .plyr.plyr--video .plyr__control--overlaid {
+  display: none;
+}
+
 .plyr.plyr--video .plyr__slider__track {
   background-color: var(
     --plyr-video-range-track-background,
